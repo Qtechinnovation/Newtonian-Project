@@ -20,6 +20,9 @@
                 border-radius: 15px;
                 padding: 10px;
                 margin-bottom: 10px;
+                display: flex;
+                flex-direction: column; /* Stack elements vertically */
+                gap: 10px; /* Space between items */
             }
             section h3 {
                 margin-left: 10px;
@@ -32,6 +35,9 @@
                 margin: 10px;
                 padding: 10px;
                 padding-bottom: 3px;
+                display: flex;
+                flex-direction: column; /* Stack title and content */
+                gap: 5px; /* Space between title and content */
             }
             article h4 {
                 margin-left: 10px;
@@ -58,6 +64,19 @@
                 background-color: rgba(0, 0, 0, 0.514);
                 padding: 10px;
             }
+            img {
+                width: 30%;
+            }
+            @media (max-width: 600px) {
+                img {
+                    width: 100%;
+                }
+
+                article p {
+                    font-size: 1rem; /* Adjust font size for readability */
+                }
+            }
+
         </style>
     </head>
     <body>
@@ -68,7 +87,7 @@
             <h3>Newton's 1st Law</h3>
             <article>
                 <h4>Inertia</h4>
-                <img src="Assets/Inertia.gif" style="width: 30%;">
+                <img src="Assets/Inertia.gif">
                 <p id:caption>Inertia is the law that states that an object in motion tends to remain in motion unless acted on by another force. The same applies for stationary objects. In the example above, the ball is an object at rest, and the other ball is a force that stops the ball from being at rest.</p>
             </article>
         </section>
@@ -76,7 +95,7 @@
             <h3>Newton's 2nd Law</h3>
             <article>
                 <h4>Force</h4>
-                <img src="Assets/Force.png" style="width: 30%;">
+                <img src="Assets/Force.png">
                 <p id:caption>Newton's second law states that net force can be calculated by multiplying mass by acceleration.</p>
             </article>
         </section>
@@ -84,7 +103,7 @@
             <h3>Newton's 3rd Law</h3>
             <article>
                 <h4>Reaction</h4>
-                <img src="Assets/Reaction.gif" style="width: 30%;">
+                <img src="Assets/Reaction.gif">
                 <p id:caption>Newton's third law states that every action has an equal and opposite reaction.</p>
             </article>
         </section>
